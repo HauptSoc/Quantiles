@@ -1,54 +1,60 @@
 ---
 # Display name
-title: Bernhard Bieri
+title: Andreas Haupt
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Master's Student in International Economics
+role: Sociologist
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Graduate Institute of International and Development Studies Geneva
-  url: https://www.graduateinstitute.ch/Homepage
+- name: Karlsruhe Institute of Technology
+  url: www.andreas-haupt.com  
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include applied microeconomics, development economics and statistical computing.
 
 # Interests to show in About widget
 interests:
-- Applied Microeconomics
-- Development Economics
-- Microeconometrics
+- Distributional Methods
+- Occupations & Labor Markets
+- Gender inequalities 
+- Economic inequality
+- Families and Couples
+
 
 # Education to show in About widget
 education:
   courses:
-  - course: MA in International Economics
-    institution: Graduate Institute of International and Development Studies Geneva
-    year: Ongoing
-  - course: BSc in Economics
-    institution: HEC Lausanne, University of Lausanne
-    year: 2020
+  - course: Habilitation in Sociology
+    institution: Karlsruhe Institue of Technology
+    year: 2021
+  - course: Dr. phil in Sociology
+    institution: Karlsruhe Institue of Technology
+    year: 2014
+  - course: M.A. Sociology, Philosophy, Linguistics
+    institution: Friedrich-Schiller-University Jena
+    year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
+- icon: envelope
+  icon_pack: fas
+  link: '#contact'  # For a direct email link, use "mailto:andreas.haupt@kit.edu".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/bieri_bernhard
-- icon: orcid  # Alternatively, use `google-scholar` icon from `ai` icon pack
+  link: https://twitter.com/HauptSoc
+- icon: google-scholar
   icon_pack: ai
-  link: https://orcid.org/0000-0001-5943-9059
+  link: https://scholar.google.com/citations?user=lM2EanIAAAAJ&hl=de
 - icon: github
   icon_pack: fab
-  link: https://github.com/BBieri
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/bernhard-bieri/
+  link: https://github.com/HauptSoc
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
@@ -64,11 +70,4 @@ email: ""
 highlight_name: false
 ---
 
-Hi and welcome to Coursedown! The main purpose of this template is to facilitate
-the creation and deployment of course websites for R-based courses at the
-Graduate Institute of Geneva. Feel free to open up an issue
-[here](https://github.com/BBieri/coursedown/issues) if you experience a bug
-or want to suggest a feature. PRs are also welcome!
-
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+Welcome to our quantile regression course! We are happy to have you here. 

@@ -2,28 +2,24 @@
 widget: hero
 headless: true
 weight: 10
-title: A great new course
-hero_media: coursedown.png
-cta:
-  label: '**View the Syllabus**'
-  url: https://www.graduateinstitute.ch/courses
-cta_alt:
-  label: Join Slack
-  url: https://slack.com
-cta_note:
-  label: >-
-    Last updated: 2021-12-29
+title: Quantile Regression
+
+# Hero image (optional). Enter filename of an image in the assets/media/ folder.
+hero_media: ''
+
 design:
   background:
-    image: mdp.jpg
-    image_darken: 0.5
-    image_parallax: true
-    image_position: center
-    image_size: cover
+    image:  quantile-title.png
+    image_darken: .8
+    # Use a fun parallax-like fixed background effect on desktop? true/false
+    parallax: true
+    # Image focal point. Options include `left`, `center` (default), or `right`.
+    position: right
+    #  Image fit. Options are `cover` (default), `contain`, or `actual` size.
+    size: cover
+    text_color_dark: true
 advanced:
   css_class: fullscreen
 ---
 
-*MINT123*
-
-Describe your course in a few words here.
+**A short course on how to look beyond the mean.**

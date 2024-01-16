@@ -5,7 +5,7 @@
 
 # Appearance: Switch themes and fonts here.
 
-theme: iheid_light
+theme: minimal
 day_night: true
 font: iheid_fonts
 font_size: M
@@ -22,15 +22,17 @@ twitter: ''
 # Note the first part of this section mainly collects the metadata to fill out
 # the outline.md widget.
 
-author: Bernhard Bieri
+author: 
+        - admin
+        
 
 instructor:
-  name: Bernhard Bieri
-  email: bernhard.bieri[at]graduateinstitute.ch
-  url: "https://www.bernhardbieri.com"
+  name: Andreas Haupt, Sebastian Wenz
+  email: andreas.haupt[at]kit.edu
+  url: "www.andreas-haupt.com"
   twitter: bieri_bernhard
   github: BBieri
-  office: "Somewhere in MDP"
+  office: "KIT, GESIS"
   contact_policy: >-
     List the contact policy of the course here.
   appointment_url: https://calendly.com
