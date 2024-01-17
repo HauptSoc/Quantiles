@@ -30,6 +30,12 @@ module:
 ## ADVANCED
 ############################
 
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^WC_
+
 enableGitInfo: false
 summaryLength: 30
 paginate: 10
@@ -71,8 +77,3 @@ related:
       weight: 100
     - name: categories
       weight: 70
-security:
-  funcs:
-    getenv:
-      - ^HUGO_
-      - ^WC_

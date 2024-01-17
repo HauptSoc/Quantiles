@@ -1,30 +1,12 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Title</title>
+    <title>Quantiles and Distributions</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Author Name" />
+    <meta name="author" content="Andreas Haupt &amp; Sebastian Wenz" />
     <script src="01-slides_files/header-attrs/header-attrs.js"></script>
     <link href="01-slides_files/remark-css/default.css" rel="stylesheet" />
     <link href="01-slides_files/remark-css/ninjutsu.css" rel="stylesheet" />
-    <script src="01-slides_files/htmlwidgets/htmlwidgets.js"></script>
-    <script src="01-slides_files/jquery/jquery-3.6.0.min.js"></script>
-    <link href="01-slides_files/leaflet/leaflet.css" rel="stylesheet" />
-    <script src="01-slides_files/leaflet/leaflet.js"></script>
-    <link href="01-slides_files/leafletfix/leafletfix.css" rel="stylesheet" />
-    <script src="01-slides_files/proj4/proj4.min.js"></script>
-    <script src="01-slides_files/Proj4Leaflet/proj4leaflet.js"></script>
-    <link href="01-slides_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
-    <script src="01-slides_files/leaflet-binding/leaflet.js"></script>
-    <script src="01-slides_files/kePrint/kePrint.js"></script>
-    <link href="01-slides_files/lightable/lightable.css" rel="stylesheet" />
-    <link href="01-slides_files/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
-    <script src="01-slides_files/datatables-binding/datatables.js"></script>
-    <link href="01-slides_files/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="01-slides_files/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
-    <script src="01-slides_files/dt-core/js/jquery.dataTables.min.js"></script>
-    <link href="01-slides_files/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
-    <script src="01-slides_files/crosstalk/js/crosstalk.min.js"></script>
     <link rel="stylesheet" href="css/iheid-xaringan-style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" type="text/css" />
   </head>
@@ -32,404 +14,117 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Title
-## Subtitle
-### <large>Author Name</large>
+.title[
+# Quantiles and Distributions
+]
+.subtitle[
+## A short Primer
+]
+.author[
+### <large>Andreas Haupt &amp; Sebastian Wenz</large>
+]
+.institute[
+### <small>KIT &amp; GESIS</small>
+]
 
 ---
 
 class: center, middle
 
-# With this template, it is very easy to build good looking slides
+# This is a very first test
 
-## and you can centre everything for title/section/other slides
-
-
+## for us to see if this setup is usable
 
 
 
----
-class: middle, inverse, iheid-red
 
-## You can colour the background and add images using straightforward markdown syntax
-
-.center[
-.polaroid[![](https://graduateinstitute.ch/sites/default/files/styles/medium/public/2019-01/James%20Hollway.jpg?itok=1Yw0keum)]
-
-James Hollway (Instructor)
-]
 
 ---
-## You can also pull images (or text) to the left or right to build columns
+## Who we are: Andreas 
 
 .pull-left[
-.polaroid[![](https://graduateinstitute.ch/sites/default/files/styles/medium/public/2019-01/James%20Hollway.jpg?itok=1Yw0keum)]
+.polaroid[![](https://www.andreas-haupt.com/authors/admin/Avatar_hu8162f7db23abce87a0df05f52210fa90_84431_270x270_fill_q75_lanczos_center.jpg)]
 
-James Hollway (Instructor)
+Andreas Haupt
 ]
 
 .pull-right[
-I can add paragraphs of extra information...
+Sociologist and Assistant Professor (Akad. Oberrat) at the Karlsruhe Institut of Technology. 
 
-or a bullet list...
-
-- one
-- two
-- three
-
-or a numbered list...
-
-1. one
-1. two
-4. three
+* Studies income and wage distributions 
+* Gender inequalities
+* Poverty
 ]
 
----
-class: split-four, center
-
-# Present your team by slicing the slide up with ninjutsu!
-
-.column[.pull-down[![:scale 75%](https://www.seekpng.com/png/detail/143-1435868_headshot-silhouette-person-placeholder.png)
-
-*Prof. Smith*
-
-Principal Investigator
-
-]]
-.column[.pull-down[![:scale 75%](https://www.seekpng.com/png/detail/143-1435868_headshot-silhouette-person-placeholder.png)
-
-*Dr. Jones*
-
-Doctoral Research Assistant
-
-]]
-.column[.pull-down[![:scale 75%](https://www.seekpng.com/png/detail/143-1435868_headshot-silhouette-person-placeholder.png)
-
-*Ms. Dupont*
-
-Research Assistant
-
-]]
-
-.column[.pull-down[![:scale 75%](https://www.seekpng.com/png/detail/143-1435868_headshot-silhouette-person-placeholder.png)
-
-*Mr. Dupond*
-
-Research Assistant
-
-]]
 
 ---
-## You can build a step-by-step reveal
+## Who we are: Sebastian 
 
---
-
-By using double dashes `--` to separate lines of text or code,
-we can build a slide up gradually.
---
-
-For example here is some more text...
---
-
-Or here is an example of some math...
-
-$$ X = \sum_i^n x_i $$
-
---
-
-Or here is a quick plot built (and cached) when the Rmarkdown document is run:
+.pull-left[
+.polaroid[![](https://gris.gesis.org/files/photos/922.jpg)]
 
 
-```r
-plot(iris)
-```
+Sebastian Wenz
+]
 
-&lt;img src="01-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" /&gt;
+.pull-right[
+Sociologist and Deputy head of team "Knowledge Exchange and Outreach" 
 
----
-class: highlight-last-item
-
-## Add progressive lists
-
-Adding the class `highlight-last-item` allows you to highlight the last element
-of a progressive list.
-
-- First item
-
---
-
-- Second item
-
---
-
--  For more options, see the `iheid-xaringan-style.css` file and search for
-"progressive slides". This feature was based on [this great article](https://www.garrickadenbuie.com/blog/better-progressive-xaringan/?panelset2=r-markdown3&amp;panelset=r-markdown&amp;panelset1=slides2).
+* Sociology of education
+* Discrimination
+* Causal inference
+]
 
 ---
 class: show-only-last-code-result
+## Distribution Functions
 
-## Progressive code
-
-Adding the class `show-only-last-code-result` allows you to render only the last
-code result.
+**Distribution functions** are commonly defined as: 
 
 
-```r
-runif(5)
-```
+$$ F_X(x)=P(X \leq x) $$ 
 
-```
-## [1] 0.6031355 0.5695131 0.2381534 0.9344525 0.1947252
-```
---
+The left hand side represents the probability, that an element of X takes a value less or equal to x. 
 
+.center[
+&lt;img src="01-slides_files/figure-html/unnamed-chunk-1-1.png" width="504" /&gt;
+]
 
-```r
-rnorm(5)
-```
-
-```
-## [1]  1.00804613  0.35288024 -0.17102374  1.01680751  0.07311153
-```
---
-
-
-```r
-rbinom(5, 1, 0.5)
-```
-
-```
-## [1] 0 0 1 0 1
-```
---
-
-
-```r
-rcauchy(5)
-```
-
-```
-## [1]  0.005894122  1.689578712  1.176994377  0.580218931 -1.177479086
-```
 
 ---
-class: center, middle
-## Or you can highlight which section of your presentation you are up to...
+## Test
 
-.pull-1[.circleoff[![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/NYCS-bull-trans-1.svg/1024px-NYCS-bull-trans-1.svg.png)]]
-.pull-1[.circleon[![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/NYCS-bull-trans-2.svg/1200px-NYCS-bull-trans-2.svg.png)]]
-.pull-1[.circleoff[![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/NYCS-bull-trans-3.svg/1200px-NYCS-bull-trans-3.svg.png)]]
+Das ist ein Test 
 
+$$ P(Y) = Y_i + 1 $$ 
 ---
-class: left, middle
-
-.blockquote[You can add unquotable quotes
-
-~ Some person]
-
----
-class: with-logo logo-iheid
-
-## Add a logo to your presentation 
-
-.pull-left[Adding a nice looking logo to your presentation is easy. Simply 
-define the `with-logo` class alongside the class of the logo itself 
-(`logo-iheid` in this case) on every slide you want the logo to appear.
-
-See [the presentation vignette](https://github.com/jhollway/iheiddown) for a
-list of the included logos.]
-
----
-
-## Add Maps
-
-
-```r
-library(leaflet)
-leaflet() %&gt;%
-  addTiles() %&gt;%
-  setView(6.1435, 46.2210, zoom = 17)
-```
-
-<div id="htmlwidget-66408a87e4339b36c079" style="width:720px;height:288px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-66408a87e4339b36c079">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[46.221,6.1435],17,[]]},"evals":[],"jsHooks":[]}</script>
-
----
-
-## Add some tables !
-
-With the addition of the excellent [`{xaringan_columns}`](https://github.com/emilyriederer/xaringan_columns) macros by Emily
-Riederer, you can create nice looking multicolumn tables using clean markdown code.
-
-![:col_header Header 1, Header 2, Header 3, Header 4, Header 5]
-![:col_list You can add rows with bulletted lists, item2, item3, hello, more content]
-![:col_list item4, item5, Or normal chunks of text (see below), la la la, tra la la]
-![:col_row 
-    More text,
-    More text,
-    .,
-    More text,
-    More text
+# Inverse CDFs
+.center[
+&lt;div class="figure"&gt;
+&lt;img src="images/cdf-invcdf2.jpg" alt="The relation between the CDF and inverse CDF" width="35%" /&gt;
+&lt;p class="caption"&gt;The relation between the CDF and inverse CDF&lt;/p&gt;
+&lt;/div&gt;
 ]
 
 ---
+# Partitioning a distribution
 
-## More tables; kable and kableExtra packages
-.pull-left[Kable: great features for displaying simple tables!
+We can chop a distribution in different parts. Tradition has it that according to the number of parts, we call the parts differently. 
 
-```r
-knitr::kable(head(mtcars[1:4], 5), format = 'html')
-```
 
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 22.8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Hornet 4 Drive &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 258 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Hornet Sportabout &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 18.7 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 360 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 175 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+| Number of parts               | Term        |
+|--------------------------|-------------|
+| 4                        | Quartile    |
+| 5                        | Quintile    |
+| 10                       | Decile      |
+| 100 (from 1 to 100)      | Percentile  |
+| 100 (from 0.01 to 1)     | Quantile    |
 
-See [the knitr documentation](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html)
-for additional options.
-]
-
-.pull-right[Want to get fancier? Use kableExtra!
-
-```r
-head(mtcars[1:4], 3) %&gt;% 
-  kableExtra::kbl()%&gt;%
-  kableExtra::kable_material(c("hover", "striped", "condensed"), full_width = F)
-```
-
-&lt;table class=" lightable-material lightable-striped lightable-hover" style='font-family: "Source Sans Pro", helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;'&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt;   &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; mpg &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; cyl &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; disp &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; hp &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Mazda RX4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Mazda RX4 Wag &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 21.0 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 6 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 160 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 110 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Datsun 710 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 22.8 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 108 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 93 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-See [the kableExtra documentation](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html)
-for additional options.
-]
-
+Within this seminar, we will use the terms *Percentile* and *Quantile* interchangeably. 
 ---
-
-## Interactive tables; DT package
-
-
-```r
-library(DT)
-DT::datatable(head(mtcars, 10),
-  fillContainer = FALSE, options = list(pageLength = 4))
-```
-
-<div id="htmlwidget-9f2d4389e0b2a6020d7f" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9f2d4389e0b2a6020d7f">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant","Duster 360","Merc 240D","Merc 230","Merc 280"],[21,21,22.8,21.4,18.7,18.1,14.3,24.4,22.8,19.2],[6,6,4,6,8,6,8,4,4,6],[160,160,108,258,360,225,360,146.7,140.8,167.6],[110,110,93,110,175,105,245,62,95,123],[3.9,3.9,3.85,3.08,3.15,2.76,3.21,3.69,3.92,3.92],[2.62,2.875,2.32,3.215,3.44,3.46,3.57,3.19,3.15,3.44],[16.46,17.02,18.61,19.44,17.02,20.22,15.84,20,22.9,18.3],[0,0,1,1,0,1,0,1,1,1],[1,1,1,0,0,0,0,0,0,0],[4,4,4,3,3,3,3,4,4,4],[4,4,1,1,2,1,4,2,2,4]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-
-See the [DT package documentation](https://rstudio.github.io/DT/) for the
-additional options.
-
----
-class: animate__animated, animate__slideInRight
-
-## Add slide transitions to  your slides
-
-Simply add the class `animate__animated` and the class corresponding to the
-desired animation such as `animate__slideInRight`, et voilà!
-
-For a complete list of the available animations and further options, visit
-[animate.style](https://animate.style/).
-
-.center[![Animation GIF](https://i.giphy.com/media/Oo6GWyiWEDgtO/giphy.webp)]
-
----
-background-image: url(https://media1.giphy.com/media/xT0BKiK5sOCVdBUhiM/giphy.gif)
-background-size: contain
-
-# And finally, you can add gifs!
-
----
-class: inverse iheid-red center middle with-logo logo-iheid_BW
-
-Made with `{iheiddown}`, the R-package for IHEID publications
-(Hollway, 2021).
-
----
-
 # References
 
-Hollway, J. (2021). _iheiddown: A package for writing IHEID documents
-in RMarkdown_. R package version 0.8.0. URL:
-[https://github.com/jhollway/iheiddown](https://github.com/jhollway/iheiddown).
+NULL
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -480,6 +175,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

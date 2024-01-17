@@ -1,12 +1,12 @@
 ---
-title: 'Lab 01'
-subtitle: 'Nathan’s Hot-Dog Eating Contest'
-summary: Nathan’s Hot-Dog Eating Contest
-date: "2018-04-09T00:00:00Z"
+title: '01 - Distributions and Quantiles'
+subtitle: 'A short primer'
+summary: The basic concepts we need for all the interesting stuff. 
+date: "2024-01-16T00:00:00Z"
 featured: false
 draft: false
 # Order the posts
-weight: 2
+weight: 1
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -14,7 +14,7 @@ weight: 2
 # Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
 image:
   placement: 2
-  caption: 'Image credit: [**Beyond Meat on Unsplash**](https://unsplash.com/photos/ib5iJHRD5PY)'
+  caption: '(https://en.wikipedia.org/wiki/File:Dirichlet_distributions.png)'
   focal_point: ""
   preview_only: true
 
@@ -26,10 +26,6 @@ image:
 projects: []
 
 links:
-- icon: flask
-  icon_pack: fas
-  name: lab
-  url: /labs/01-eda_hot_dogs.html
 - icon: magic
   icon_pack: fas
   name: slides
@@ -38,11 +34,4 @@ links:
 
 ## Readings
 
-
-- R for Data Science, Workflow: Basics Chapter: http://r4ds.had.co.nz/workflow-basics.html
-
-- Modern Dive, Getting Started Chapter: http://moderndive.com/2-getting-started.html
-
-- R & RStudio Basics: https://bookdown.org/chesterismay/rbasics/3-rstudiobasics.html
-
-- RStudio IDE Cheatsheet: https://github.com/rstudio/cheatsheets/blob/master/rstudio-ide.pdf
+- none
