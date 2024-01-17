@@ -119,15 +119,8 @@ plot( CDF , main="Cummulative Distribution")
 ```
 ]
 
-
 ---
-## Test
-
-Das ist ein Test 
-
-$$ P(Y) = Y_i + 1 $$ 
----
-# Inverse CDFs
+## Inverse CDFs
 .center[
 ```{r, echo=FALSE, out.width="35%", fig.cap="The relation between the CDF and inverse CDF"}
 knitr::include_graphics("images/cdf-invcdf2.jpg")
@@ -135,7 +128,7 @@ knitr::include_graphics("images/cdf-invcdf2.jpg")
 ]
 
 ---
-# Partitioning a distribution
+## Partitioning a distribution
 
 We can chop a distribution in different parts. Tradition has it that according to the number of parts, we call the parts differently. 
 
