@@ -102,7 +102,7 @@ class: show-only-last-code-result
 **Distribution functions** are commonly defined as: 
 
 
-$$ F_X(x)=P(X \leq x) $$ 
+$$F_X(x)=P(X \leq x)$$ 
 
 The left hand side represents the probability, that an element of X takes a value less or equal to x. 
 
@@ -146,6 +146,52 @@ cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
 ```
 
 Within this seminar, we will use the terms *Percentile* and *Quantile* interchangeably. 
+
+---
+## Parts of distributions and limits of parts of distributions
+
+.pull-left[
+```{r, echo=FALSE, out.width="35%", fig.cap="The relation between the CDF and inverse CDF"}
+library(ggplot2)
+library(ggridges)
+# Examples of coloring by ecdf or quantiles
+ggplot(iris, aes(x = Sepal.Length, y = Species, fill = factor(stat(quantile)))) +
+  stat_density_ridges(
+    geom = "density_ridges_gradient",
+    calc_ecdf = TRUE,
+    quantiles = 5
+  ) +
+  scale_fill_viridis_d(name = "Quintiles") +
+  theme_ridges()
+#> Picking joint bandwidth of 0.181
+```
+]
+
+.pull-right[ Sometimes people refer to quantiles or deciles as intervals within a distribution, like "households within lower decile of the distribution". 
+
+Keep in mind that quantiles as we have defined them are separators of such intervals. 
+]
+
+
+---
+## Quantiles -- formal definition
+Quantiles define thresholds between regions within the distribution. They separate regions with lower or equal cumulative density (or probability) $p$ from those with higher ones. Because the CDF and the PDF are linked through the inverse function $F^{-1}$, we can calculate the value of any threshold using: 
+
+$$Q = F^{-1}(p)$$
+
+A second way to define quantiles is to use the smallest value for $x$ that exceeds the cumulative density separated by the quantile:
+
+$$Q(p) \,=\,\inf\left\{ x\in \mathbb{R} : p \geq F(x) \right\}$$
+
+Software packages differ, which approach they use for estimating descriptive quantiles. This can matter if you have only sparse data. 
+
+---
+## Estimation of quantiles in Stata for description 
+
+* *summarize, detail* and *tabstat* gives you also a (limited) set of quantiles.
+* The commands *xtile* and *pctile* estimate descriptive quantiles, which rely on the the idea of the second equation.
+* The command *egen(new_var), cut(var) n()* creates a new variable "new_var" with "n()" cutpoints.  
+
 ---
 # References
 

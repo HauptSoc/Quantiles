@@ -82,7 +82,7 @@ class: show-only-last-code-result
 **Distribution functions** are commonly defined as: 
 
 
-$$ F_X(x)=P(X \leq x) $$ 
+`$$F_X(x)=P(X \leq x)$$` 
 
 The left hand side represents the probability, that an element of X takes a value less or equal to x. 
 
@@ -114,6 +114,39 @@ We can chop a distribution in different parts. Tradition has it that according t
 | 100 (from 0.01 to 1)     | Quantile    |
 
 Within this seminar, we will use the terms *Percentile* and *Quantile* interchangeably. 
+
+---
+## Parts of distributions and limits of parts of distributions
+
+.center[
+&lt;div class="figure"&gt;
+&lt;img src="01-slides_files/figure-html/unnamed-chunk-3-1.png" alt="The relation between the CDF and inverse CDF" width="35%" /&gt;
+&lt;p class="caption"&gt;The relation between the CDF and inverse CDF&lt;/p&gt;
+&lt;/div&gt;
+]
+
+
+
+
+---
+## Quantiles -- formal definition
+Quantiles define thresholds between regions within the distribution. They separate regions with lower or equal cumulative density (or probability) `\(p\)` from those with higher ones. Because the CDF and the PDF are linked through the inverse function `\(F^{-1}\)`, we can calculate the value of any threshold using: 
+
+`$$Q = F^{-1}(p)$$`
+
+A second way to define quantiles is to use the smallest value for `\(x\)` that exceeds the cumulative density separated by the quantile:
+
+`$$Q(p) \,=\,\inf\left\{ x\in \mathbb{R} : p \geq F(x) \right\}$$`
+
+Software packages differ, which approach they use for estimating descriptive quantiles. This can matter if you have only sparse data. 
+
+---
+## Estimation of quantiles in Stata for description 
+
+* *summarize, detail* and *tabstat* gives you also a (limited) set of quantiles.
+* The commands *xtile* and *pctile* estimate descriptive quantiles, which rely on the the idea of the second equation.
+* The command *egen(new_var), cut(var) n()* creates a new variable "new_var" with "n()" cutpoints.  
+
 ---
 # References
 

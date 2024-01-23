@@ -2,3 +2,4 @@ unnamed-chunk-1	ecdf	plot	rnorm
 refs	::	myBib
 unnamed-chunk-2	::
 table2	cat
+unnamed-chunk-3	aes	factor	ggplot	iris	library	quantile	scale_fill_viridis_d	Sepal.Length	Species	stat	stat_density_ridges	theme_ridges
